@@ -270,7 +270,7 @@ jobs:
           tag_name: ${{ inputs.tweak_version }}_${{ env.YT_VERSION }}(${{ github.run_number }})
           name: ${{ env.RELEASE_PREFIX }} ${{ inputs.tweak_version }} and ${{ env.YT_VERSION }} ${{ env.FOR_IOS15 }}
           files: ${{ env.RELEASE_PREFIX }}_${{ env.YT_VERSION }}_${{ inputs.tweak_version }}.ipa
-          draft: true
+          draft: false
           body_path: ${{ env.NOTES_SELECTED }}
 
       - name: Output Release URL
